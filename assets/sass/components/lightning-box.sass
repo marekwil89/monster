@@ -1,0 +1,46 @@
+.lightning-box
+  background: #000000
+
+  .thunder
+    position: absolute
+    opacity: 0
+    top: 0px
+    bottom: 0px
+    right: 0px
+    left: 0px
+    background: $white
+    
+  .lightning
+    opacity: 0
+    position: absolute
+    top: 0px
+    bottom: 0px
+    width: 60%
+    min-height: 200vh
+    z-index: 3
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
+    
+  .cloud
+    position: absolute
+    top: 0px
+    bottom: 0px
+    left: 0px
+    background-size: cover
+    background-repeat: repeat-x
+    background: url('../img/cloud.png')
+
+    &.front
+      background-position: bottom
+      right: -2000px
+      z-index: 99
+      
+ 
+    &.back
+      right: -1500px
+      background-position: top
+
+
+
+

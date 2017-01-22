@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monster</title>
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
+</head>
+<body>
+
+  <div class="pre-loader">
+    <img class="loader" src="./assets/img/loader.svg" alt="loader image">
+  </div>
+
+  <main id="impress">
+    <section class="step slide secret-box" data-x="3500" data-y="-3500" data-rotate="120" data-scale="1"> 
+      <div class="secret"></div>
+      <div class="info-wrap"> 
+        <h2>Secret</h2>
+        <div class="hr"></div>
+        <p>There is a town in northern America, it has little secret. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quasi voluptate nisi, cupiditate repudiandae doloribus porro hic distinctio tempore</p>
+      </div>
+      <a href="#/step-2" class="btn">Next
+        <div class="line"></div>
+      </a>
+    </section>
+
+    <section class="step slide lightning-box" data-x="-2000" data-y="-2500" data-rotate="10" data-scale="2">
+      <div class="thunder"></div>
+      <div class="lightning"></div>
+      <div class="cloud front"></div>
+      <div class="cloud back"></div>
+      <div class="info-wrap">
+        <h2>Storm</h2>
+        <div class="hr"></div>
+        <p>Every year, the city appears mysterious storm. Is maintained for a few days and leaves. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quasi voluptate nisi, cupiditate repudiandae doloribus porro hic distinctio tempore</p>
+      </div>
+      <a href="#/step-3" class="btn">Next
+        <div class="line"></div>
+      </a>
+    </section>
+
+    <section class="step slide street-box" data-x="-1000" data-y="5000" data-rotate="-90" data-scale="1">
+      <div class="eye first"></div>
+      <div class="eye second"></div>
+      <div class="eye third"></div>
+      <div class="info-wrap">
+        <h2>Monster</h2>
+        <div class="hr"></div>
+        <p>Storm brings the monsters that await in the darkness and hunt the people. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quasi voluptate nisi, cupiditate repudiandae doloribus porro hic distinctio tempore</p>
+      </div>
+      <a href="#/step-4" class="btn">Next
+        <div class="line"></div>
+      </a>
+    </section>
+
+    <section class="step slide contact-box" data-x="-4000" data-y="2500" data-rotate="180" data-scale="2">
+      <div class="info-wrap">
+        <h2>Rescue</h2>
+        <div class="hr"></div>
+        <div class="icons">
+          <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+          <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+          <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>       
+        </div>
+      </div>
+      <a href="#/step-1" class="btn">Back
+        <div class="line"></div>
+      </a>
+    </section>
+  </main>
+  
+  <script src="./bower_components/impress/impress.js"></script>
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script>impress().init();</script>
+  <script src="./assets/js/preLoader.js"></script>
+  <script src="./assets/js/lightningStrikes.js"></script>
+  <script src="./assets/js/appearAnimation.js"></script>
+</body>
+</html>

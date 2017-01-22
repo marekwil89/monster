@@ -1,0 +1,23 @@
+.btn
+  margin-top: 25px
+  font-size: $font-small
+  color: $white
+  letter-spacing: $space-between
+  transition: 0.3s all
+  z-index: 899
+  cursor: pointer
+  text-decoration: none
+
+  .line
+    transition: 0.3s all
+    border-bottom: 2px solid $white
+    width: 0px
+    
+  &:hover
+    .line
+      border-bottom: 2px solid $white
+      width: 100%
+
+@media screen and (max-height: 400px)
+  .btn
+    margin: 0

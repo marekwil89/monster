@@ -1,0 +1,70 @@
+body
+  margin: 0
+  min-height: 100vh
+  background: $dark
+  font-family: 'Roboto', sans-serif
+
+.info-wrap
+  width: 600px
+  z-index: 5
+
+.hr
+  z-index: 99
+  margin: 30px auto
+  width: 100px
+  height: 7px
+  background: $main-color
+  border-radius: 10px
+
+h2
+  margin: 0
+  text-align: center
+  letter-spacing: $space-between
+  z-index: 5 
+  color: $white
+  font-size: $font-big
+  font-family: 'Archivo Black', sans-serif
+  font-weight: 800
+  text-transform: uppercase
+
+p
+  text-align: justify
+  letter-spacing: 1.5px
+  z-index: 5 
+  color: $white
+  font-size: $font-small
+  text-indent: -23px
+  line-height: 150%
+
+  &:before
+    content: '...'
+
+  &:after
+    content: '...'
+
+section
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  overflow: hidden
+  width: 1950px
+  min-height: 100vh
+  flex-direction: column
+
+@media screen and (max-width: 700px)
+  p
+    font-size: $font-xSmall
+    text-indent: 0
+
+  h2
+    font-size: $font-large
+
+  .info-wrap
+    width: 300px
+    padding: 0 15px
+
+
+@media screen and (max-height: 450px)
+  .hr
+    display: none

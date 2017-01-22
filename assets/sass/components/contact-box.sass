@@ -1,0 +1,58 @@
+.contact-box
+  &:before
+    position: absolute
+    content: ''
+    top: 0px
+    bottom: 0px
+    left: 0px
+    right: 0px
+    background: url('../img/lamp.jpg')
+    background-size: cover
+    background-position: bottom
+    animation: lights 3s infinite ease 
+
+  .info-wrap
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    min-height: 30vh
+
+    h2
+      line-height: 121px
+      font-size: $font-huge
+      position: relative
+      
+      &:after
+        width: 100%
+        filter: blur(5px)
+        color: rgba($dark, 0.5)
+        position: absolute
+        z-index: -1
+        bottom: -55px
+        left: -4px
+        display: block
+        content: 'Rescue'
+        transform: scaleY(-1)
+        animation: shadow infinite 3s linear
+
+    .icons
+      z-index: 99
+      .fa
+        margin: 10px
+        color: $white
+        cursor: pointer
+        border-bottom: 2px solid transparent
+
+        &:hover
+          border-bottom: 2px solid $white
+
+@media screen and (max-width: 700px)
+  .contact-box
+
+    .info-wrap
+      h2
+        font-size: $font-large
+
+        &:after
+          display: none
